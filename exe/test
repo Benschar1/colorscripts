@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+
+for i in $(seq 0 7); do
+	printf "\\e[4${i}m   ";
+done
+printf "\\e[0m\n"
+
+for i in $(seq 0 7); do
+	printf "\\e[10${i}m   ";
+done
+printf "\\e[0m\n"
+
+printf "\\e[0m\n"
